@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BANDUNG JUARA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="icon" href="img/bandung.png" type="image/x-icon">
+
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #4a4a4a;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 247px;
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  transform: ;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar{
+  position: fixed;
+  background: #404040;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+#sidebar .title{
+  line-height: 65px;
+  text-align: center;
+  background: #333;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2f2f2;
+  border-bottom: 1px solid #222;
+}
+#sidebar .list-items{
+  position: relative;
+  background: #404040;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+#sidebar .list-items li:first-child{
+  border-top: none;
+}
+#sidebar .list-items li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i{
+  margin-right: 20px;
+}
+#sidebar .list-items .icons{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sidebar .list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+  background: #4a4a4a;
+  border-radius: 5px;
+  border: 1px solid #383838;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover{
+  background: #404040;
+}
+.list-items .icons a:first-child{
+  margin-left: 0px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #202020;
+  z-index: -1;
+  width: 100%;
+  text-align: center;
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 40px;
+  font-weight: 700;
+}
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightsalmon;">
+	<marquee>
+<font size=4 color=white>
+BANDUNG, KOMPAS.com - Banjir menerjang sejumlah wilayah di Kota Bandung, Jawa Barat, Kamis (11/1/2024) sore. Banjir menggenangi Jalan soekarno, Braga, Kecamatan Regol, dan Tamansari. Di Braga, banjir sempat menggenangi permukiman warga di Gang Apandi dengan ketinggian 30 sentimeter. Sebagian warga yang terdampak harus diungsikan ke tempat lebih aman di luar Gang Apandi. Berdasarkan pantauan Kompas.com di lokasi, sekitar pukul 19.35 WIB, banjir berangsur surut. Sejumlah warga di RT 05/RW08 tampak sedang membersihkan genangan air dan lumpur yang menerjang rumah mereka. Warga Braga, Lucky (46) mengatakan, banjir disertai lumpur diduga terjadi akibat jebolnya tanggul Sungai Cikapundung. "Banjirnya sorean sampai magrib. Terus disertai lumpur juga. Curiga tanggul sungai jebol sampai begini," katanya saat ditemui di lokasi, Kamis. Dia menyebutkan, banjir disertai lumpur ini merupakan yang terparah yang pernah terjadi. "Kalau banjir juga cuma semata kaki, tapi ini lumayan parah sampai ngerusak rumah warga," tambahnya. Warga lainnya, Lukman (25) mengatakan, banjir mulai surut ketika magrib dan menyisakan lumpur. "Magriban air mulai surut, tapi ya ini ada lumpur yang cukup banyak," ujar Lukman. Hingga Kamis malam, petugas dari Pemerintah Kota Bandung sedang membantu warga dan melakukan pendataan rumah yang terdampak banjir. 
+</font>
+</marquee>
+<div class="wrapper">
+<center>
+      <input type="checkbox" id="btn" hidden>
+      <label for="btn" class="menu-btn">
+	  <img src="img/menu.jpeg" width="100%">
+      </label>
+      <nav id="sidebar">
+        <div class="title">Side Menu</div>
+        <ul class="list-items">
+          <li><a onclick="openKota('Profil')">Home</a></li>
+          <li><a onclick="openKota('About Me')">About Me</a></li>
+          <div class="icons">
+            <a href="https://www.instagram.com/naufalazka_17"><img src="img/instagram.jpeg" width="100%"></a>
+            <a href="https://www.linkedin.com/in/naufal-azka-1017521ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin.jpg" width="100%"></a>
+            <a href="https://github.com/Naufalazka17"><img src="img/github.png" width="100%"></a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <img src="img/banner.png" width="100%" alt="">
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-text-white" style="display:none; background-color: dodgerblue;"
+        id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large w3-text-white" style="background-color: dodgerblue;">Close
+            &times;</button>
+        <button class="w3-bar-item w3-button w3-blue w3-text-white side w3-hover-mediumseagreen w3-round-large"
+            onclick="openKota('Profil')" id="side-profil">Profil</button>
+        <button class="w3-bar-item w3-button w3-text-white side w3-hover-mediumseagreen w3-round-large"
+            onclick="openKota('Peta')" id="side-peta">Peta</button>
+        <button class="w3-bar-item w3-button w3-text-white side w3-hover-mediumseagreen w3-round-large"
+            onclick="openKota('Sejarah')" id="side-sejarah">Sejarah</button>
+        <button class="w3-bar-item w3-button w3-text-white side w3-mediumseagreen-blue w3-round-large"
+            onclick="openKota('Kereta ke Bandung')" id="side-kereta">Kereta Ke Bandung
+            </button>
+        <button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('Braga')" id="side-braga">Braga</button>
+        <button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('Kampung Cai Ranca Upas')" id="side-kampungcai">Kampung Cai Ranca Upas</button>
+			<button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+           onclick="openKota('Kawah Putih Ciwidey')" id="side-kawahputih">Kawah Putih Ciwidey</button>
+			<button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('Lembang Park & Zoo')" id="side-lembangpark">Lembang Park & Zoo</button>
+			<button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('Orchid Forest Cikole')" id="side-orchid">Orchid Forest Cikole</button>
+			<button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('Taman Hutan Raya Ir. H. Djuanda')" id="side-tahura">Taman Hutan Raya Ir. H. Djuanda</button>
+			<button class="w3-button  w3-bar-item w3-round-large side transition w3-hover-mediumseagreen"
+            onclick="openKota('The Great Asia Africa Lembang')" id="side-asia">The Great Asia Africa Lembang</button>
+    </div>
+    <div class="w3-bar w3-padding-16 w3-large w3-card w3-border-bottom w3-border-white"
+        style="letter-spacing:4px; background-color: dodgerblue;">
+        <div class="w3-left w3-margin-left ">
+            <table>
+                <tr>
+                    <td><a onclick="openKota('Profil')" style="cursor: pointer;"><img src="img/bandung.png" height="50"
+                                alt="" class="w3-bar-item w3-left"></a></td>
+                    <td class="w3-hide-small">
+                        <h5 class="w3-text-white w3-margin-left " class="w3-bar-item w3-hide-small"><strong>KOTA BANDUNG</strong></h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="w3-right w3-hide-small w3-margin-right">
+            <button class="w3-bar-item w3-button w3-blue w3-text-white nav w3-hover-mediumseagreen w3-round-large"
+                onclick="openKota('Profil')" id="nav-profil">Profil</button>
+            <button class="w3-bar-item w3-button w3-text-white nav w3-hover-mediumseagreen w3-round-large"
+                onclick="openKota('Peta')" id="nav-peta">Peta</button>
+            <button class="w3-bar-item w3-button w3-text-white nav w3-hover-mediumseagreen w3-round-large"
+                onclick="openKota('Sejarah')" id="nav-Sejarah">Sejarah</button>
+            <button class="w3-bar-item w3-button w3-text-white nav w3-hover-mediumseagreen w3-round-large"
+                onclick="openKota('Kereta ke Bandung')" id="nav-kereta">Kereta Ke Bandung
+                </button>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-button w3-text-white nav w3-hover-mediumseagreen w3-round-large">Destinasi Wisata</button>
+                <div class="w3-dropdown-content w3-bar-block w3-round-large w3-right w3-card-2">
+                    <button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Braga')" id="nav-braga">Braga</button>
+                    <button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Kampung Cai Ranca Upas')" id="nav-kampungcai">Kampung Cai Ranca Upas</button>
+						<button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Kawah Putih Ciwidey')" id="nav-kawahputih">Kawah Putih Ciwidey</button>
+						<button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Lembang Park & Zoo')" id="nav-lembangpark">Lembang Park & Zoo</button>
+						<button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Orchid Forest Cikole')" id="nav-orchid">Orchid Forest Cikole'</button>
+						<button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('Taman Hutan Raya Ir. H. Djuanda')" id="nav-tahura">Taman Hutan Raya Ir. H. Djuanda</button>
+						<button class="w3-button w3-large w3-bar-item w3-round-large transition nav w3-hover-mediumseagreen"
+                        onclick="openKota('The Great Asia Africa Lembang')" id="nav-asia">The Great Asia Africa Lembang</button>
+                </div>
+            </div>
+        </div>
+        <button class="w3-button w3-text-white w3-xlarge w3-right w3-margin-right w3-hide-large"
+            onclick="w3_open()">☰</button>
+    </div>
+
+<div id="Profil" class="w3-container kota w3-animate-zoom" style="display:none">
+<img src="img/sate.jpeg">
+ <h2>PROFIL KOTA BANDUNG</h2>
+ <hr>
+ <p>Bandung adalah nama kota dan kabupaten di Jawa Barat.
+ Saat ini nama Bandung merujuk pada tiga wilayah di Bandung Raya: Kota Bandung, Kabupaten Bandung, dan Kabupaten Bandung Barat (KBB).
+ Kota Bandung pada zaman dahulu dikenal sebagai Parijs van Java (bahasa Belanda). Artinya“Kota Paris dari Jawa“.
+Karena terletak di dataran tinggi, Bandung dikenal sebagai tempat yang berhawa sejuk.
+Hal ini menjadikan Bandung sebagai salah satu kota tujuan wisata. Keberadaan perguruan tinggi negeri dan banyak perguruan tinggi swasta di Bandung
+membuat kota Bandung juga dikenal sebagai salah satu kota pelajar di Indonesia..</p>
+ </div>
+ <div id="About Me" class="w3-container kota w3-animate-zoom" style="display:none">
+ <center>
+<img src="img/22 naufal.jpg" alt="foto profil" width="20%" class="w3-circle"
+style="border: 5px solid #181733; margin-top: 2%;">
+ <p style="font-size: x-large; margin-bottom: 0;"><strong>Naufal Azka P.U.</strong></p>
+                            <p style="margin: 0; color: white;">NIM: 10123216 (IF-11)</p>
+                            <p style="margin: 0 0 5px 0; color: white;">Universitas Komputer Indonesia</p>
+ </div>
+<div id="Braga" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Jalan Braga</h2>
+ <hr>
+ <p>Braga adalah ikon kota Bandung, dan enggak mungkin liburan ke Bandung kalau enggak menyempatkan diri sekadar lewat atau bahkan singgah untuk menikmati hypenya Braga. Dari restoran, bar, sampai coffee shop kekinian yang berdiri di dalam gedung tua yang terjaga, semuanya ada di Braga.</p>
+ <hr>
+ <img src="img/braga.jpg" width="100%" alt="">
+ </div>
+ <div id="Kampung Cai Ranca Upas" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>Kampung Cai Ranca Upas</h2>
+ <hr>
+ <p> Kampung Cai Ranca Upas adalah salah satu tempat wisata paling menarik di Ciwidey! Selain punya area perkemahan yang cantik, Kampung Cai Ranca Upas juga punya  yang menyenangkan untuk dikunjungi. Selain itu juga ada berbagai permainan outbound yang bisa kamu coba di sana bersama keluarga.</p>
+ <hr>
+ <img src="img/kampungcai.jpg">
+ </div>
+ <div id="Kawah Putih Ciwidey" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Kawah Putih Ciwidey</h2>
+ <hr>
+ <p>Kawah Putih Ciwidey merupakan danau kawah yang terbentuk dari letusan Gunung Patuha, salah satu gunung berapi di Jawa Barat.
+Air di danau kawah ini memiliki kandungan asam yang sangat tinggi, yang menyebabkan permukaannya berwarna putih kehijauan atau malah biru dan coklat - warna permukaan ini bisa berubah sesuai konsentrasi sulfur di dalamnya dan temperaturnya. </p>
+ <hr>
+ <img src="img/kawahputih.jpeg">
+ </div>
+ <div id="Lembang Park & Zoo" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>Lembang Park & Zoo</h2>
+ <hr>
+ <p>Terletak di Jl. Kolonel Masturi No. 171, Sukajaya, Lembang, Kabupaten Bandung Barat, Jawa Barat, Lembang Park & Zoo enggak hanya merupakan kebun binatang di mana para pengunjung bisa bertemu dan mengenal berbagai satwa, tapi juga menjadi tempat wisata rekreasi yang menyenangkan.
+Salah satu yang paling keren di sini adalah Bird Aviary-nya yang besar banget dan keren, dengan banyak burung cantik di dalamnya! Selain itu, kamu juga bisa makan siang bersama singa atau ngemil bareng kucing-kucing lucu di Neko Cat Cafe.</p>
+ <hr>
+ <img src="img/lembangpark.jpg">
+ </div>
+  <div id="Orchid Forest Cikole" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>Orchid Forest Cikole</h2>
+ <hr>
+ <p>Terletak di Cikole, Lembang, Kabupaten Bandung Barat, Jawa Barat, Orchid Forest Cikole adalah hutan anggrek terbesar di Indonesia. Enggak main-main, jumlah anggrek di sini mencapai 20.000 tanaman! Selain anggrek, barisan pohon pinus yang ada di sana juga membuat pemandangan Orchid Forest Cikole menjadi sangat indah.
+Selain menawarkan pemandangan hutan pinus dan anggrek, Orchid Forest Cikole juga memiliki tempat bermain golf, area bermain dengan kelinci, jembatan tali yang bersinar di malam hari, sampai horse ranch.</p>
+ <hr>
+ <img src="img/orchid.jpeg">
+ </div>
+  <div id="Taman Hutan Raya Ir. H. Djuanda" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Taman Hutan Raya Ir. H. Djuanda</h2>
+ <hr>
+ <p>Sesuai namanya, Taman Hutan Raya Ir. H. Djuanda memang bukan sekadar taman - ini adalah hutan kota yang terletak di area Dago Pakar. Taman yang kerap disebut Tahura oleh warga Bandung ini juga jadi salah satu tempat wisata di Bandung favorit - termasuk bagi masyarakat kota Bandung sekalipun.
+Wisata ke Tahura adalah pilihan yang pas kalau kamu ingin mencoba jalan-jalan di tengah hutan tapi tanpa jauh-jauh keluar kota.</p>
+ <hr>
+ <img src="img/tahura.jpeg">
+ </div>
+  <div id="The Great Asia Africa Lembang" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>The Great Asia Africa Lembang</h2>
+ <hr>
+ <p>Satu tempat, tapi punya area instagramable bertema banyak negara? Kamu bisa menemukannya di The Great Asia Africa Lembang. Terletak di Jalan Raya Lembang, tepat berseberangan dengan Farmhouse Lembang yang lebih dahulu populer, The Great Asia Africa adalah salah satu tempat wisata di Lembang yang tengah naik daun saat ini.
+Di sini, kamu bisa berfoto-foto menggunakan hanbok dengan latar belakang ala rumah-rumah Korea di masa lalu, kimono di Kyoto mini, menikmati warna-warni dinding di Maroko, atau bahkan berpose ala film India, lengkap dengan sari.</p>
+ <hr>
+ <img src="img/asia.jpg">
+ </div>
+
+ <div id="Sejarah" class="w3-container kota w3-animate-zoom" style="display:none">
+<img src="img/Sejarah.jpg">
+ <h2>SEJARAH BERDIRINYA KOTA BANDUNG</h2>
+ <hr>
+ <p>Pada bulan Desember 1799, VOC mengalami kebangkrutan sehingga seluruh aset dan kekuasaannya diambil alih oleh Republik Batavia (1795-1806). Pada tahun 1806, Kaisar Prancis Napoleon Bonaparte mendirikan Republik Batavia sebagai penerus Kerajaan Belanda, dengan mengangkat adiknya, Louis Napoleon (Lodewijk Napolen), sebagai raja.
+
+Untuk mempertahankan wilayah koloninya dari ancaman Inggris, Louis Napoleon mengangkat seorang yang berpengalaman dalam militer bernama Herman Willem Daendels sebagai Gubernur jenderal Hindia Belanda antara tahun 1808-1811, dengan misi utama mempertahankan Pulau Jawa dari serangan Inggris. Daendels berpendapat bahwa mobilisasi darat lebih sesuai untuk mempertahankan Jawa dari serangan Inggris, sebab Inggris mempunyai kekuatan armada laut yang unggul pada saat itu. Oleh karena itu salah satu misinya adalah membangun Jalan Raya Pos (Groote Postweg) yang membentang menghubungkan Anyer di ujung barat Pulau Jawa hingga Panarukan di ujung timur Jawa sepanjang 1000 km.
+Jalan Raya Pos berdampak besar, tidak hanya terhadap perkembangan pulau Jawa secara umum namun juga kota-kota yang dilaluinya. Bandung salah satu contohnya. Pada awalnya, Jalan Raya Pos berjarak 11 km di utara Krapyak, ibu kota Kabupaten Bandung saat itu. Daendels memerintahkan kepada Bupati Bandung ke-6, R.A. Wiranatakusumah II (1794-1829) untuk membangun ibu kota Bandung yang baru di sekitar jalan tersebut. Ucapan Daendels yang terkenal adalah: "Zorg, dat als ik terug kom hier een stad is gebouwd" (Usahakan, bila saya datang kembali ke sini, sebuah kota telah dibangun).
+Wiranatakusumah II kemudian memilih sebuah lokasi di dekat sumber mata air yang bernama Sumur Bandung. Dalam Bahasa Sunda, Sumur Bandung berarti sumur yang berpasangan atau berhadapan (dari kata bandungan). Kedua sumur tersebut berada di tepi barat Sungai Cikapundung. Satu sumur terletak di Bale Sumur Bandung atau Gedung PLN Distribusi Jawa Barat dan Banten, Jalan Asia Afrika. Sedangkan sumur lainnya berada di bawah bangunan bekas kompleks pertokoan Miramar, Alun-alun Bandung.
+
+Sesuai dengan konsep tata ruang tradisional, Bupati R.A. Wiranatakusumah II dan sejumlah rakyatnya membangun Pendopo di sisi selatan Alun-alun Bandung, menghadap ke arah Gunung Tangkuban Parahu yang merupakan simbol kepercayaan sejarah masyarakat Sunda. Sedangkan Masjid Agung Bandung (sekarang Masjid Raya Bandung) dibangun di sisi barat alun-alun, dan pasar terletak di sisi timur.
+
+Dengan sebuah besluit pemerintahan Hindia Belanda tanggal 25 September 1810, Kota Bandung dinyatakan sebagai ibu kota Kabupaten Bandung, sehingga tanggal 25 September ditetapkan sebagai hari jadi Kota Bandung.
+
+Pada masa pemerintahan Bupati R.A. Wiranatakusumah IV (1846-1874) yang dikenal dengan julukan Dalem Bintang, ibu kota Karesidenan Priangan dipindahkan dari Cianjur ke Bandung berdasarkan besluit Nomor 18 tanggal 17 Agustus 1864. Rumah Residen Priangan yang terletak di Residentsweg (Jalan Pasar Baru, sekarang Jalan Otto Iskandar Dinata) dibangun tahun 1867, sedangkan Kantor Residen Priangan dibangun di sisi timur Hotel Post Road yang kemudian menjadi Hotel Savoy Homann.
+
+Pada tanggal 1 April 1906 Gubernur Jenderal J.B. Van Heutz dengan ordonansi tanggal 2 Februari 1906 yang diundangkan tanggal 1 Maret 1906 menetapkan Kota Bandung ditingkatkan statusnya menjadi Pemerintah Kota (Gemeente). Sejak itulah Kota Bandung resmi lepas dari Kabupaten Bandung, walaupun ibu kota Kabupaten Bandung masih terletak di Kota Bandung.</p>
+ </div>
+ <div id="Peta" class="w3-container kota w3-animate-zoom" style="display:none">
+<h2>PETA KOTA BANDUNG</h2>
+<p>Secara geografis, kota Bandung terletak di tengah-tengah provinsi jawa barat, serta berada pada ketinggian kurang lebih 768 meter di atas permukaan laut.
+
+Kota Bandung memiliki luas wilayah 16.731 hektar, yang secara administratif terbagi atas 30 kecamatan, 151 kelurahan, 1.561 rw, dan 9.691 rt. kecamatan terluas adalah kecamatan gedebage, dengan luas 958 hektar dan kecamatan terkecil adalah wilayah kecamatan astana anyar dengan luas 89 hektar. sedangkan jumlah penduduk kota bandung tahun 2012 tercatat 2.655.160 jiwa, terdiri dari 1.358.623 laki-laki, dan 1.296.537 perempuan.</p>
+<hr>
+<img src="img/peta.jpg">
+ </div>
+
+ <div id="Kereta ke Bandung" class="w3-container kota" style="display:none">
+ <h2>Harga Tiket Kereta Api ke Bandung</h2>
+ <p>Paket 1 = Ayam Geprek + Nasi + Teh Hangat/Dingin Rp.25.000,00,-</p>
+ <p>Paket 2 = Soto Madura + Nasi + Teh Hangat/Dingin Rp.20.000,00,-</p>
+ <p>Paket 3 = Mie Ayam Baso Pangsit + Teh Hangat/Dingin Rp.18.000,00,-</p>
+<form name=form2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<script>
+function proses()
+{
+var asal=document.form2.asal.value;
+if(asal=="GARUT") var hargatiket=60000;
+if(asal=="JAKARTA") var hargatiket=150000;
+if(asal=="PURWAKARTA") var hargatiket=25000;
+if(asal=="YOGYAKARTA") var hargatiket=250000;
+document.form2.hargatiket.value=hargatiket;
+
+if(document.form2.paket1.checked) hargatiket=hargatiket+25000;
+if(document.form2.paket2.checked) hargatiket=hargatiket+20000;
+if(document.form2.paket3.checked) hargatiket=hargatiket+18000;
+var jumlah=document.form2.jumlah.value;
+var total=hargatiket*jumlah;
+document.form2.total.value=total;
+}
+</script>
+<div class="w3-container w3-animate-zoom">
+<div class="w3-panel w3-blue w3-card-4">
+
+<center>
+<p>PROGRAM HARGA TIKET KERETA API KE BANDUNG</p>
+</div>
+
+<div class="w3-panel w3-cyan w3-card-4">
+<center>
+<table>
+<tr><td>KOTA ASAL<td><select class="w3-select" name="asal">
+<option>GARUT
+<option>JAKARTA
+<option>PURWAKARTA
+<option>YOGYAKARTA
+<tr><td>FASILITAS<td><input class="w3-check" type="checkbox" name="paket1" value="paket1">PAKET 1
+<tr><td><td><input class="w3-check" type="checkbox" name="paket2" value="paket2">PAKET 2
+<tr><td><td><input class="w3-check" type="checkbox" name="paket3" value="paket3">PAKET 3
+<tr><td>JUMLAH<td><input class="w3-radio" type="radio" name="jumlah" value="1">1
+<input class="w3-radio" type="radio" name="jumlah" value="2">2
+<input class="w3-radio" type="radio" name="jumlah" value="3">3
+<tr><td>HARGA TIKET<td><input class="w3-input" type="text" name="hargatiket">
+<tr><td>TOTAL HARGA<td><input class="w3-input" type="text" name="total">
+</table>
+</div>
+<div class="w3-panel w3-red w3-round">
+<p>
+<center>
+<input type="button" class="w3-btn w3-purple w3-round" value="Proses" onclick="proses()">
+<input type="button" class="w3-btn w3-orange w3-round" value="Reset" onclick="reset()">
+</p>
+</div>
+</div>
+ </div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
